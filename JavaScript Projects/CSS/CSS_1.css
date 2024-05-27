@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(163, 145, 134);
+    text-align: center;
+    width: 400px;
+    height: auto;
+    border: 5px solid black;
+    padding-bottom: 10px;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    width: 240px;
+    height: auto;
+}
+
+.box::placeholder {
+    color: white;
+}
+
+.submit_button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    box-shadow: 5px;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: yellow;
+}
+
+.box:hover {
+    background-color: grey;
+}
+
+.box:hover::placeholder {
+    color: yellow;
+}

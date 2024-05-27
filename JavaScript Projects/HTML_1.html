@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./JS/JavaScript_1.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Select a number below!</h1>
+        <ul>
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        <h3>Enter your choice below:</h3>
+        <br>
+        <input id="number_input" type="text">
+        <button onclick="number_function()">Submit</button>
+        <p id="output"></p>
+        <br>
+        <br>
+        <canvas id="canvas1" width="180" height="100" style="border:5px solid black;"></canvas>
+        <script>
+            var c = document.getElementById("canvas1");
+            var ctx = c.getContext("2d");
+            
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "white");
+            
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+        </script>
+        <br>
+        <br>
+        <h1 class="Click">This text will change!</h1>
+        <h3 class="Click">This text will not change.</h3>
+        <button onclick="Hello_World_Function()">Click me!</button>
+    </body>    
+</html>
